@@ -13,7 +13,7 @@ const runTest = (basket, expectedTotal) => {
 
 
     test('actualTotal to equal expectedTotal', () => {
-        expect(checkout1.calculateTotal(actualTotal)).toBe(expectedTotal);
+        expect(actualTotal).toBe(expectedTotal);
       });
 
 
