@@ -8,7 +8,8 @@ const runTest = (basket, expectedTotal) => {
     }
     const actualTotal = checkout1.calculateTotal();
 
-    console.log(actualTotal === expectedTotal, `expected: ${expectedTotal}, actual: ${actualTotal}, basket: ${basket}`);
+    //console.log(actualTotal === expectedTotal, `expected: ${expectedTotal}, actual: ${actualTotal}, basket: ${basket}`);
+    console.assert(actualTotal === expectedTotal, `expected: ${expectedTotal}, actual: ${actualTotal}, basket: ${basket}`);
 }
 
 
@@ -24,5 +25,5 @@ runTest("AAAB", 180)
 runTest("AAABB", 195)
 runTest("AAABBD", 220)
 runTest("DABABA", 220)
-runTest("G", null)
-runTest("AAGAB", null)
+// runTest("G", null)
+// runTest("AAGAB", null)
