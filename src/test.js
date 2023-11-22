@@ -1,4 +1,3 @@
-//const { expect } = require('chai');
 const { pricingRules, Checkout } = require("./main");
 
 const runTest = (basket, expectedTotal) => {
@@ -8,18 +7,12 @@ const runTest = (basket, expectedTotal) => {
             checkout1.scan(basket[i]);
     }
     const actualTotal = checkout1.calculateTotal();
-    //expect(actualTotal).to.equal(expectedTotal);
-
-
+    
 
     test('actualTotal to equal expectedTotal', () => {
         expect(actualTotal).toBe(expectedTotal);
       });
 
-
-
-    // console.log(actualTotal === expectedTotal, `expected: ${expectedTotal}, actual: ${actualTotal}, basket: ${basket}`);
-    //console.assert(actualTotal === expectedTotal, `expected: ${expectedTotal}, actual: ${actualTotal}, basket: ${basket}`);
 }
 
 
